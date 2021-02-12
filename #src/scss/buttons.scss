@@ -1,0 +1,21 @@
+.btn{
+  border: 0;
+  padding: 5px 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  border-radius: 4px;
+  background-color: #83af9875;
+  color: rgb(56, 55, 55);
+
+  transition: all .2s linear;
+}
+.btn:hover {
+  background-color: #446e59;
+  color: rgba(255, 255, 255, 0.726);
+}
+.btn--long {
+  padding: 10px 100px;
+}

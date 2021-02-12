@@ -1,0 +1,139 @@
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica Neue, sans-serif;
+  color: rgb(82, 80, 80);
+  background-color: #fcf8f8;
+
+}
+a{
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header{
+
+}
+
+.header__top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  padding:0 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 30px 5px rgba(46, 46, 46, 0.1);
+  background-color: #fff;
+}
+.top__logo {
+  padding: 0 30px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.7;
+  text-transform: uppercase;
+
+  background-color: #cdb9c4;
+  color: #ffffff;
+
+}
+.top__menu {
+  display: flex;
+}
+.menu__item {
+  padding: 15px 30px;
+  display: flex;
+  list-style: none;
+  background-color: transparent;
+
+  transition: background-color .2s ease-in;
+}
+.menu__item:hover{
+  background-color: #cdb9c4;
+  color: #fff;
+}
+.menu__item-link{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+.top__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top__basket {
+  margin-left: 30px;
+  width: 100%;
+  max-width: 22px;
+  max-height: 18px;
+}
+.top__basket:hover{
+  max-width: 25px;
+  max-height: 20px;
+}
+
+
+
+.header__center{
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.center__left {
+  width: 50%;
+}
+.center__title{
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.center__title > span {
+  font-weight: 700;
+  color:#cdb9c4;
+}
+.center__text {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-size: 18px;
+  line-height: 1.6;
+
+
+}
+
+.center__right {
+  width: 40%;
+}
+.center__right-img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 450px;
+  border-radius: 70px;
+}
+
+.center__bottom{
+  margin-top: 100px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottom__text{
+  margin-bottom: 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
