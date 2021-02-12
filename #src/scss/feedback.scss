@@ -1,0 +1,18 @@
+.feedback{
+  background-color: rgba(39, 39, 39, 0.884);
+  padding: 20px 0;
+}
+.feedback__text {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(165, 165, 165);
+  margin-bottom: 15px;
+}
+.feedback__form {
+  display: flex;
+  justify-content: center;
+}
+.form__input{
+  padding: 7px 30px;
+  margin-right: 20px;
+}
