@@ -1,0 +1,40 @@
+.burger {
+  display: none;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 0;
+}
+.burger__line {
+  display: block;
+  width: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.62);
+  &:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top: 16px;
+    right: 0;
+    left: 0;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.62);
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+}
