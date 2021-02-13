@@ -427,6 +427,7 @@ input[type=button] {
 }
 
 .btn {
+  display: block;
   border: 0;
   padding: 5px 10px;
   font-weight: 700;
@@ -447,7 +448,9 @@ input[type=button] {
 }
 
 .btn--long {
-  padding: 10px 100px;
+  text-align: center;
+  width: 40%;
+  padding: 10px 0;
 }
 
 body {
@@ -580,7 +583,7 @@ a {
 
 .center__title > span {
   font-weight: 700;
-  color: #cdb9c4;
+  color: #8e6382;
 }
 
 .center__text {
@@ -600,30 +603,6 @@ a {
      object-fit: cover;
   max-height: 450px;
   border-radius: 70px;
-}
-
-.center__bottom {
-  margin-top: 100px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.bottom__text {
-  margin-bottom: 20px;
-  font-size: 13px;
-  text-transform: uppercase;
 }
 
 .burger {
@@ -664,7 +643,7 @@ a {
 }
 
 .product__inner {
-  padding: 50px 0;
+  padding: 100px 0;
   border-top: 2px solid rgba(0, 0, 0, 0.212);
   border-bottom: 2px solid rgba(0, 0, 0, 0.212);
   display: -webkit-box;
@@ -673,7 +652,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* justify-content: space-between; */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2rem;
@@ -770,7 +748,8 @@ a {
 }
 
 .form__input {
-  padding: 7px 30px;
+  padding: 7px 30px 7px 10px;
+  font-family: inherit;
   margin-right: 20px;
 }
 
@@ -784,7 +763,53 @@ footer {
   color: #a5a5a5;
 }
 
+.cart__modal-trigger {
+  position: fixed;
+  bottom: 80px;
+  left: 30px;
+  max-width: 40px;
+  max-height: 40px;
+  opacity: .5;
+}
+
+@media (max-width: 1100px) {
+  .card {
+    margin: 0 auto;
+    width: 45%;
+  }
+
+  .card__price {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .center__right {
+    width: 45%;
+  }
+
+  .center__left {
+    width: 45%;
+  }
+
+  .center__title {
+    font-size: 35px;
+  }
+
+  .center__text {
+    line-height: 1.4;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+}
+
 @media (max-width: 768px) {
+  .btn--long {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+  }
+
   .header__top {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -803,16 +828,27 @@ footer {
     font-size: 25px;
   }
 
+  .header__center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 70px 0;
+  }
+
   .center__left {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
   }
 
   .center__title {
+    margin-top: 20px;
+    text-align: center;
     font-size: 33px;
   }
 
   .center__text {
+    text-align: center;
     font-size: 16px;
     line-height: 1.3;
     margin-top: 20px;
@@ -820,10 +856,77 @@ footer {
   }
 
   .center__right {
-    display: none;
+    width: 100%;
+  }
+
+  .center__right-img {
+    border-radius: 10px;
   }
 
   .burger {
     display: block;
+  }
+
+  .feedback__form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .form__input {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .feedback__form > button {
+    margin-top: 15px;
+    width: 51%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .card__footer_btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .card__footer_btns:last-child {
+    margin-bottom: 10px;
+  }
+
+  .card__price {
+    margin-top: 20px;
+    text-align: right;
+    width: 100%;
+  }
+}
+
+@media (max-width: 515px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 467px) {
+  .btn--long {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .center__title {
+    font-size: 28px;
+  }
+
+  .center__text {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .center__right-img {
+    max-height: 300px;
+  }
+
+  .header__center {
+    padding: 70px 0 30px 0;
   }
 }

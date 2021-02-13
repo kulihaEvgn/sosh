@@ -13,6 +13,23 @@
   justify-content: center;
 }
 .form__input{
-  padding: 7px 30px;
+  padding: 7px 30px 7px 10px;
+  font-family: inherit;
   margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .feedback__form{
+    flex-wrap: wrap;
+  }
+  .form__input{
+    width: 50%;
+    margin: 0 auto;
+
+  }
+  .feedback__form > button {
+    margin-top: 15px;
+    width: 51%;
+    padding: 10px 0;
+  }
 }
